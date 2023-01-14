@@ -4,7 +4,7 @@ import com.example.data.models.Character
 
 object Constants {
     // you can find it in terminal with ipconfig for windows and ifconfig for linux and unix and port in application.conf
-    const val BASE_URL = "http://192.168.0.112:8080"
+    const val BASE_URL = "http://192.168.1.8:8080"
 
     val characters: List<Character> = listOf(
         Character(
@@ -59,7 +59,7 @@ object Constants {
                 "Check, please.",
                 "Finn, you're dumb- you're dumb- you're dumb- you're da man! This is gonna be a snap!"
             ),
-            "$BASE_URL/characters_images/ice_king.png"
+            "$BASE_URL/characters_images/BMO.png"
         ),
         Character(
             "Bonnibel \"Bonnie\" Bubblegum",

@@ -18,3 +18,12 @@ fun Route.charactersRoute() {
         )
     }
 }
+
+fun Route.characterRoute() {
+    get("/character/{name}") {
+        call.respond(
+            status = HttpStatusCode.OK,
+            message = Constants.characters.first { it.name == call.parameters["name"] }
+        )
+    }
+}

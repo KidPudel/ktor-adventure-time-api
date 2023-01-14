@@ -1,5 +1,6 @@
 package com.example.plugins
 
+import com.example.routes.characterRoute
 import com.example.routes.charactersRoute
 import io.ktor.server.routing.*
 import io.ktor.http.*
@@ -17,6 +18,7 @@ fun Application.configureRouting() {
         }
         // call function in the routing configuration
         charactersRoute()
+        characterRoute()
 
         // Static plugin. Try to access `/static/index.html`
         // to access static content - static("/static"), but i've deleted it to access without "/static"
