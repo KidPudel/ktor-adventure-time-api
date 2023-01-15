@@ -2,7 +2,8 @@
 This is the simple Adventure Time API for getting characters, that i've developed for my Adventure Time Charactes android app.
 
 # How to use it?
-To get characters list use following route:  
+
+## 1. To get characters list use following route:  
 `http://(your local ip address):8080/characters`
 
 and you'll get something like this:  
@@ -33,4 +34,24 @@ and you'll get something like this:
     "image": "http://192.168.1.8:8080/characters_images/ice_king_pixel.png"
   }
 ]
+```
+
+## 2. To get specified character, use the following route:
+`http://(your local ip address):8080/character/{name of the character}`
+
+example response:  
+
+```json
+{
+   "fullName": "Finn Mertens",
+   "name": "Finn",
+   "species": "Human",
+   "age": 17,
+   "sex": "Male",
+   "quotes": [
+   "Mathematical!",
+   "Whoa! Algebraic!"
+   ],
+   "image": "http://192.168.1.8:8080/characters_images/finn.png"
+}
 ```
